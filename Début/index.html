@@ -8,15 +8,69 @@
         
         <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
         <script type="text/jsx">
-          const app = document.getElementById('app');
-          ReactDOM.render(<h1>De l'HTML cree avec React</h1>,app);
+          const app = document.getElementById("app");
+          
+          function Header({title}){
+            return (<h1>{title ? title : 'Default title'}</h1>)
+          }
+
+          function Home() {
+            const names = ['John Doe', 'Foo Bar', 'Linus T.'];
+            let compteur = 0
+
+            const [counter] = React.useState();
+
+            function handleClick() {
+                console.log("incrementer le compteur")
+                compteur = compteur + 1;
+                console.log(compteur);
+            }
+
+            return (    
+                <div>
+                    <Header title='Apprendre React'/>
+
+                    <ul> 
+                        {names.map((name)=>(
+                            <li key = {name} >{name}</li>
+                        )) }
+                    </ul>
+
+                    <button onClick={handleClick}>Compteur {compteur}</button>
+
+                </div>
+            )
+          }
+
+          ReactDOM.render(<Home />, app);
         </script>
     </body>
 </html>
 
+<!-- La valeur de retour d'une fonction (code avec un retrou de focntion, utilisation d'un if pour vérifier si j'ai un titre et sinon afficher l'autre valeur en titre) 
+    function createTitle(title){
+    if (title){
+        return title;
+    } else {
+        return 'Default title'
+    }
+  }
+  
+  function Header({title}){
+    return (<h1>{createTitle(title)}</h1>)
+  } -->
 
 
-<!-- //Sélection de la balise div avec l'id 'app'
+
+<!-- un template string (sa va afficher cool et le title comme sa)
+    function Header({title}){
+    return (<h1>{`Cool ${title}`}</h1>)
+  } -->
+
+
+
+<!-- Code qu'on utilise plu 
+    //Sélection de la balise div avec l'id 'app'
 const app = document.getElementById('app');
 
 // Creation d'un nouvel élément html, une balise h1
