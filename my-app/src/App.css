@@ -2,13 +2,43 @@
    text-align: center; 
 }
 
+li{
+  list-style-type:none;
+}
+
 p.DATE{
   color: aqua;
+  text-align: left;
+  border: solid black;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+
+p.ID{
+  color:antiquewhite;
+  text-align: center;
+  border: solid black;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+p.VALUE{
+  color: darkred;
+  text-align: right;
+  border: solid black;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .App-B{
   background-color:dimgray;
-  border-radius: 10%;
+  border-radius: 10px;
+  display: flex;
 }
 
 .App-Name{

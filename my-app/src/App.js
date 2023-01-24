@@ -12,7 +12,7 @@ function App() {
     {
       id : 'Cherry seed',
       value : '30€',
-      date : 'June 2022 06'
+      date : 'April 2022 16'
     },
 
     {
@@ -45,11 +45,11 @@ function App() {
         </p>
          
         <p className='ID'>{myBord.map((el)=>(
-          el.id
+          <li key={el.id}>{el.id}</li>
         ))}</p>
 
         <p className='VALUE'>{myBord.map((el)=>(
-          el.value
+          <li key={el.value}>{el.value}</li>
         ))}</p>
 
       </div>
