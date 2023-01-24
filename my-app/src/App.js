@@ -28,7 +28,7 @@ function App() {
     },
 
     {
-      id : 'Bluetooht Headphone',
+      id : 'Bluetooth Headphone',
       value : '120€',
       date : 'January 2023 29'
     },
@@ -37,19 +37,22 @@ function App() {
 
   return (
     <div className='App-header'>
-      <p>{myBord.map((el)=>(
-        el.id
-      ))}</p>
+      <div className='App-B'>
+          
+        <p className='DATE'>{myBord.map((el)=>(
+          <li key={el.date}>{el.date}</li>
+        ))}
+        </p>
+         
+        <p className='ID'>{myBord.map((el)=>(
+          el.id
+        ))}</p>
 
-      <p>{myBord.map((el)=>(
-        el.value
-      ))}</p>
+        <p className='VALUE'>{myBord.map((el)=>(
+          el.value
+        ))}</p>
 
-      <p>{myBord.map((el)=>(
-        el.date
-      ))}</p>
-
-
+      </div>
     </div>
   );
 }

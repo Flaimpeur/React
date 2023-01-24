@@ -1,5 +1,18 @@
 .App {
-  text-align: center;
+   text-align: center; 
+}
+
+p.DATE{
+  color: aqua;
+}
+
+.App-B{
+  background-color:dimgray;
+  border-radius: 10%;
+}
+
+.App-Name{
+  animation: App-logo-spin infinite 20s linear;
 }
 
 .App-logo {
