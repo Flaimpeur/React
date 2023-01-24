@@ -16,14 +16,12 @@
 
           function Home() {
             const names = ['John Doe', 'Foo Bar', 'Linus T.'];
-            let compteur = 0
-
-            const [counter] = React.useState();
+            {/* Voici un commentaire */}
+            const [compteur, setCompteur] = React.useState(0);
 
             function handleClick() {
-                console.log("incrementer le compteur")
-                compteur = compteur + 1;
-                console.log(compteur);
+                setCompteur(compteur + 1);
+                console.log(compteur)
             }
 
             return (    
