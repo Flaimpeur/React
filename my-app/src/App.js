@@ -33,10 +33,23 @@ function App() {
       date : 'January 2023 29'
     },
   ]
+  
 
   return (
     <div className='App-header'>
-      <h1>Salut</h1>
+      <p>{myBord.map((el)=>(
+        el.id
+      ))}</p>
+
+      <p>{myBord.map((el)=>(
+        el.value
+      ))}</p>
+
+      <p>{myBord.map((el)=>(
+        el.date
+      ))}</p>
+
+
     </div>
   );
 }
