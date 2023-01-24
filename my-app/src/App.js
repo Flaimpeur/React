@@ -1,23 +1,42 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const myBord = [
+    {
+      id : 'Shovel',
+      value : '35€',
+      date : 'April 2022 10'
+    },
+
+    {
+      id : 'Cherry seed',
+      value : '30€',
+      date : 'June 2022 06'
+    },
+
+    {
+      id : 'Gaming Chair',
+      value : '200€',
+      date : 'octobre 2022 20'
+    },
+
+    {
+      id : 'New Screen',
+      value : '159€',
+      date : 'December 2022 12'
+    },
+
+    {
+      id : 'Bluetooht Headphone',
+      value : '120€',
+      date : 'January 2023 29'
+    },
+  ]
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App-header'>
+      <h1>Salut</h1>
     </div>
   );
 }
