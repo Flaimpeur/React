@@ -10,41 +10,6 @@ li{
   list-style-type:none;
 }
 
-p.DATE{
-  color: aqua;
-  text-align: left;
-  border: solid black;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  margin-top: 0%;
-  margin-bottom: 0%;
-}
-
-
-p.NAME{
-  color:antiquewhite;
-  text-align: center;
-  border: solid black;
-  margin-top: 0%;
-  margin-bottom: 0%;
-}
-
-p.VALUE{
-  color: darkred;
-  text-align: right;
-  border: solid black;
-  margin-top: 0%;
-  margin-bottom: 0%;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-.App-B{
-  background-color:dimgray;
-  border-radius: 10px;
-  display: flex;
-}
-
 .App-Name{
   animation: App-logo-spin infinite 20s linear;
 }
@@ -61,7 +26,8 @@ p.VALUE{
 }
 
 .App-header {
-  background-color: #282c34;
+  background-image: url(test2.jpg) ;
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
