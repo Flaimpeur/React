@@ -4,45 +4,50 @@ import Expenses from './components/Expenses.js';
 function App() {
   const myBord = [
     {
-      id : 'Shovel',
+      id : 'e1',
+      name : 'Shovel',
       value : '35€',
-      date : '2022 April 10',
+      date : new Date(2022, 3, 10),
     },
 
     {
-      id : 'Cherry seed',
+      id : 'e2',
+      name : 'Cherry seed',
       value : '30€',
-      date : '2022 April 16',
+      date : new Date(2022, 3, 16),
     },
 
     {
-      id : 'Gaming Chair',
+      id : 'e3',
+      name : 'Gaming Chair',
       value : '200€',
-      date : '2022 October 20',
+      date : new Date(2022, 9, 20),
     },
 
     {
-      id : 'New Screen',
-      value : '159€',
-      date : '2022 December 12',
+      id : 'e4',
+      name : 'New Screen',
+      value : '169€',
+      date : new Date(2022, 11, 12),
     },
 
     {
-      id : 'Bluetooth Headphone',
+      id : 'e5',
+      name : 'Bluetooth Headphone',
       value : '120€',
-      date : '2023 January 29',
+      date : new Date(2023, 0, 20)  
     },
-  ]
+  ];
   
-
   return (
     <div className='App-header'>
-      <h1>On recommence</h1>
-      <Expenses items={myBord} />
+      <h1>Composant APP</h1>
+      <Expenses myExpenses={myBord}/>
     </div>
   );
-}
+};
 
+export default App;
 
 // return (
 //   <div className='App-header'>
@@ -53,8 +58,8 @@ function App() {
 //       ))}
 //       </p>
        
-//       <p className='ID'>{myBord.map((el)=>(
-//         <li key={el.id}>{el.id}</li>
+//       <p className='NAME'>{myBord.map((el)=>(
+//         <li key={el.name}>{el.name}</li>
 //       ))}</p>
 
 //       <p className='VALUE'>{myBord.map((el)=>(
@@ -64,6 +69,3 @@ function App() {
 //     </div>
 //   </div>
 // );
-
-
-export default App;

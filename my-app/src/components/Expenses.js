@@ -1,12 +1,17 @@
+import Depense from './Depense';
+import './Expenses.css';
 
-function Expenses(props) {
-    return(
-        <div>
-            <h4>encore</h4>
-            <h2>depuis le debut</h2>
-            
-        </div>
-    )
-}
+function Expenses({myExpenses}) {
+  return(
+      <div>
+        <h1>Composant Depense</h1>
+        <ul>
+        {myExpenses.map((element)=>{
+          return <Depense depense = {element}/>;
+        })}
+        </ul>
+      </div>
+  );
+};
 
 export default Expenses;
