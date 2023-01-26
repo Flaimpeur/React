@@ -1,4 +1,4 @@
-import Print from './Print';
+import MyList from './MyList';
 
 
 function Peoples({items}) {
@@ -6,7 +6,7 @@ function Peoples({items}) {
       <div>
         <ul>
         {items.map((element)=>{
-          return <Print key={element.id} human = {element}/>;
+          return <MyList key={element.id} data = {element}/>;
         })}
         </ul>
       </div>
