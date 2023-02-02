@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+import './NewPeople.css';
 import MyForm from './MyForm';
 
 function NewPeople(props) {
@@ -21,9 +22,9 @@ function NewPeople(props) {
   const stopEditingHandler = () => {
     setIsEditing(false);
   };
-
+  
   return (
-    <div>
+    <div className='new-people'>
       {!isEditing && (
         <button onClick={startEditingHandler}>Add Name and Age</button>
       )}

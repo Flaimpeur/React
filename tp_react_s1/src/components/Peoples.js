@@ -1,4 +1,5 @@
 import MyList from './MyList';
+import './Peoples.css';
 
 
 function Peoples({items}) {

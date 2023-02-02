@@ -1,0 +1,44 @@
+@import url(https://fonts.google.com/noto/specimen/Noto+Serif+Display/tester);
+
+.new-people {
+    background-color: rgba(72,23,231,0.5);
+    padding: 2rem;
+    margin: 4rem auto;
+    width: 35rem;
+    max-width: 95%;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+  }
+  
+  .new-people button {
+    font: inherit;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border: 1px solid #0a0231;
+    background-color: #0a0231;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+    font-family: 'Noto Serif Display', ser;
+  }
+  
+  .new-people button:hover,
+  .new-people button:active {
+    background-color: #510674;
+    border-color: #510674;
+  }
+  
+  .new-people button.alternative {
+    color: #220131;
+    border-color: transparent;
+    background-color: transparent;
+  }
+  
+  .new-people button.alternative:hover,
+  .new-people button.alternative:active {
+    background-color: #ddb3f8;
+  }

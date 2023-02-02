@@ -1,8 +1,8 @@
-
+import './MyList.css'
 
 function MyList(props) {
     return (
-    <div>
+    <div className='list'>
         <div>
             <li>{props.data.name}
             <div>{props.data.age}</div>

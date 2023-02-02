@@ -1,11 +1,12 @@
-// import useForm from "react"
+import React, { useState } from 'react';
 
 
-// function SubmitForm(enteredName, enteredAge) {
-//     const setError = useForm();
-//     if (enteredName === "" || enteredAge < 0) {
-//         return setError("Invalid input")
-//     }
-// }
+const SubmitForm = (enteredName,enteredAge) => {
+    const [error, setError] = useState(false);
+    if(!enteredName || !enteredAge){
+        setError((previousValue) => {
+            return !previousValue
+    })}
+}
 
-// export default SubmitForm
+export default SubmitForm;

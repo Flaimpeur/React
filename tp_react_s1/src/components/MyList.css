@@ -1,0 +1,11 @@
+@import url('https://fonts.google.com/noto/specimen/Noto+Sans+Mono?noto.continent=Europe&noto.region=FR');
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    color: black;
+    font-family: 'Noto Sans Mono', serif;
+  }

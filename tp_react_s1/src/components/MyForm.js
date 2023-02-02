@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './MyForm.css'
+import SubmitForm from './SubmitForm'
 
 const MyForm = (props) => {
   const [enteredName, setenteredName] = useState('');
@@ -16,6 +17,8 @@ const MyForm = (props) => {
 
   const submitHandler = (event) => {
     event.preventDefault();
+    <SubmitForm enteredName={enteredName} enteredAge={enteredAge}/>
+
 
     const peopleData = {
       name: enteredName,
@@ -27,17 +30,12 @@ const MyForm = (props) => {
     setenteredAge('');
   };
 
-  const SubmitForm = () => {
-    if(!enteredName || !enteredAge){
-        setError((previousValue) => {
-            return !previousValue
-    })}
-}
+
 
   return (
     <form onSubmit={submitHandler}>
-      <div>
-        <div>
+      <div className='new-people__controls'>
+        <div className='new-people__control'>
           <label>Name</label>
           <input
             type='text'
@@ -46,7 +44,7 @@ const MyForm = (props) => {
           />
           
         </div>
-        <div>
+        <div className='new-people__control'>
           <label>Age</label>
           <input
             type='number'
@@ -58,9 +56,9 @@ const MyForm = (props) => {
           
         </div>
       </div>
-      <div>
+      <div className='new-people__actions'>
         <button type="button" onClick={props.onCancel}>Cancel</button>
-        <button onSubmit={SubmitForm}>Add People</button>
+        <button type='submit'>Add People</button>
         {error && <div className='Error'>Invalid Syntax</div>}
       </div>
     </form>
