@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 
 
-const SubmitForm = (enteredName,enteredAge) => {
-    const [error, setError] = useState(false);
-    if(!enteredName || !enteredAge){
-        setError((previousValue) => {
-            return !previousValue
-    })}
-}
+const SubmitForm = ({error,children}) => {
+    return(
+    <>
+    {error && <div className='Error'>Invalid Syntax</div>}
+    {children}
+    </>
+    );
+};
 
 export default SubmitForm;

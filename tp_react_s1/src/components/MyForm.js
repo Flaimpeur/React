@@ -17,9 +17,12 @@ const MyForm = (props) => {
 
   const submitHandler = (event) => {
     event.preventDefault();
-    <SubmitForm enteredName={enteredName} enteredAge={enteredAge}/>
+    if(!enteredName || !enteredAge){
+      setError(true);
+      return
+  }
 
-
+    setError(false);
     const peopleData = {
       name: enteredName,
       age: enteredAge + ' ans',
@@ -34,6 +37,7 @@ const MyForm = (props) => {
 
   return (
     <form onSubmit={submitHandler}>
+      <SubmitForm error={error}/>
       <div className='new-people__controls'>
         <div className='new-people__control'>
           <label>Name</label>
@@ -59,7 +63,6 @@ const MyForm = (props) => {
       <div className='new-people__actions'>
         <button type="button" onClick={props.onCancel}>Cancel</button>
         <button type='submit'>Add People</button>
-        {error && <div className='Error'>Invalid Syntax</div>}
       </div>
     </form>
   );

@@ -1,7 +1,9 @@
 @import url(https://fonts.google.com/noto/specimen/Noto+Serif+Display/tester);
+@import url(https://fonts.google.com/specimen/Roboto+Condensed);
 
 .Error{
     color: red;
+    font-family: 'Roboto Condensed', serif;
   }
   
 
